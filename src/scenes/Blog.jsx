@@ -22,10 +22,9 @@ const Blog = () => {
           </p>
           <LineGradient width="w-1/3" />
           <p className="mt-10 text-xl font-playfair">
-          I'm thrilled to share my journey and expertise in website development
-          through my Medium blog. On my blog, I delve into the exciting world of
-          new technologies and explore various aspects of website development,
-          with a particular focus on cloud infrastructure.
+          I'm thrilled to share my journey and expertise in Softwarer Engineering
+          through my Medium blog. My articles have <br/><span className="text-yellow">500+ </span>monthly readers.
+          
         </p>
         </motion.div>
       {/* TESTIMONIALS */}

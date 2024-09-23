@@ -10,7 +10,7 @@ import useMediaQuery from "./hooks/useMediaQuery";
 import { useEffect, useState } from "react";
 import Blog from "./scenes/Blog";
 import { motion } from "framer-motion";
-
+import Education from "./scenes/Education"
 function App() {
   const [selectedPage, setSelectedPage] = useState("about");
   const [isTopOfPage, setIsTopOfPage] = useState(true);
@@ -48,6 +48,16 @@ function App() {
           onViewportEnter={() => setSelectedPage("about")}
         >
           <Landing setSelectedPage={setSelectedPage} />
+        </motion.div>
+      </div>
+      <LineGradient />
+      <div className="w-5/6 mx-auto md:h-full ">
+        <motion.div
+          margin="0 0 -200px 0"
+          amount="all"
+          onViewportEnter={() => setSelectedPage("education")}
+        >
+          <Education />
         </motion.div>
       </div>
       <LineGradient />

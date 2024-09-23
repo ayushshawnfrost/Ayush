@@ -69,11 +69,12 @@ const Landing = ({ setSelectedPage }) => {
               California State University, East Bay.
             </span>
             . */}
-            I am a skilled full-stack web developer with a passion for creating dynamic and engaging web applications. 
-            I specialize in building serverless full stack applications, leveraging the latest web technologies to deliver seamless user experiences.
+            Highly skilled software engineer with over 3 years of experience in developing scalable and reliable applications, 
+            specializing in full-stack development and cloud-based solutions. 
+            Proficient in modern technologies like Spring Boot, React.js, and AWS, with a proven track record of enhancing application performance and reliability in both startup and enterprise environments.
 
-Currently, I am pursuing a {" "}
-            <span className="text-yellow">master’s degree</span> in{" "} <span className="text-blue">Computer Science </span>from{" "} <span className="text-red">
+I hold a {" "}
+            <span className="text-yellow">Master’s degree</span> in{" "} <span className="text-blue">Computer Science </span>from{" "} <span className="text-red">
               California State University, East Bay.
             </span> <br></br><br></br>
 

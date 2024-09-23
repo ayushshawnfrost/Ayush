@@ -94,7 +94,7 @@ const Projects = () => {
             <li className="pb-2">Engineered a real-time American Sign Language (ASL) recognition system. Constructed a machine learning model with TensorFlow and TensorFlow.js to accurately recognize ASL signs from video frames.</li>
             <li>Face, hand and pose landmark is detected by mediapipe holistic solution. Developed a web application in order to make this model more accessibly.</li>
           </div>
-          {/* <Project title="Get Your Jab" href="https://ayushshawnfrost.github.io/GetYourJab_2022/" desc="" img="1" />
+          <Project title="Get Your Jab" href="https://ayushshawnfrost.github.io/GetYourJab_2022/" desc="" img="1" />
           <div className="ml-3 mt-5 font-playfair">
             <p className="text-2xl font-playfair text-yellow pb-5">Get Your Jab</p>
             <li className="pb-2">Developed a client-side web application that gives information on Covid-19 vaccination centers and slots availability throughout India.</li>
@@ -105,7 +105,7 @@ const Projects = () => {
             <p className="text-2xl font-playfair text-yellow pb-5">Covid-19 Dashboard (India)</p>
             <li className="pb-2">Covid-19 dashboard for India. Shows the number of Active Cases, Confirmed Cases, Deceased, Migrated, Recovered cases state wise.</li>
             <li>The application consumes data from Public APIs.</li>
-          </div> */}
+          </div>
         </motion.div>
       </div>
     </section>
