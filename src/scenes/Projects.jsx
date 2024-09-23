@@ -4,6 +4,8 @@ import proj1 from "../assets/1.png";
 import proj2 from "../assets/2.png";
 import proj3 from "../assets/3.PNG";
 import proj4 from "../assets/4.png";
+import proj5 from "../assets/fanout_project.png";
+import proj6 from "../assets/proj.jpg";
 
 const container = {
   hidden: {},
@@ -33,9 +35,9 @@ const Project = ({ title, href, desc, img }) => {
             {desc}
           </p>
         </div>
+        {img ==="1" &&<img src={proj5} alt={projectTitle} />}
+        {img ==="2" &&<img src={proj6} alt={projectTitle} />}
         {img ==="3" &&<img src={proj3} alt={projectTitle} />}
-        {img ==="1" &&<img src={proj1} alt={projectTitle} />}
-        {img ==="2" &&<img src={proj2} alt={projectTitle} />}
         {img === "4" && <img src={proj4} alt={projectTitle} />}
       </a>
     </motion.div>
@@ -81,6 +83,22 @@ const Projects = () => {
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
         >
+          <Project title="RelaxingRetreats (Hotel Room Booking System)" href="https://github.com/ayushshawnfrost/Fan-Out-Serverless-Architectures-Using-SNS-SQS-and-Lambda" desc="" img="1" />
+          <div className="ml-3 mt-5 font-playfair">
+            <p className="text-2xl font-playfair text-yellow pb-5">RelaxingRetreats (Hotel Room Booking System)</p>
+            <li className="pb-2">Constructed a scalable event-driven architecture for a Hotel Room Booking System using AWS SNS, SQS, Lambda, and 
+            DynamoDB. Enhanced scalability and reliability with SNS fanout messaging, improving booking volume handling.</li>
+            <li>Secured the application with token-based authentication using AWS Cognito. Defined SNS subscription filters for 
+            targeted email notifications. Devised a responsive front-end with React.js and deployed it on AWS S3.</li>
+          </div>
+          <Project title="Stellar-Jobs-Network" desc="" href="https://github.com/ayushshawnfrost/Stellar-Jobs-Network" img="2" />
+          <div className=" leading-6 ml-3 mt-5 font-playfair">
+            <p className="text-2xl font-playfair text-yellow pb-5">Stellar-Jobs-Network</p>
+            <li className="pb-2">Launched a Spring Boot Rest API-based Job Board Platform with three microservices, facilitating job postings and 
+            employee reviews. Incorporated Resilience4J to implement retry, and rate limiting features.</li>
+            <li>Launched a Spring Boot Rest API-based Job Board Platform with three microservices, facilitating job postings and 
+            employee reviews. Incorporated Resilience4J to implement retry, and rate limiting features.</li>
+          </div>
           <Project title="Code Chronicles" href="http://ayush.sharma.s3-website.us-east-2.amazonaws.com/" desc="" img="3" />
           <div className="ml-3 mt-5 font-playfair">
             <p className="text-2xl font-playfair text-yellow pb-5">Code Chronicles(Serverless Full stack application)</p>
@@ -94,7 +112,11 @@ const Projects = () => {
             <li className="pb-2">Engineered a real-time American Sign Language (ASL) recognition system. Constructed a machine learning model with TensorFlow and TensorFlow.js to accurately recognize ASL signs from video frames.</li>
             <li>Face, hand and pose landmark is detected by mediapipe holistic solution. Developed a web application in order to make this model more accessibly.</li>
           </div>
-          <Project title="Get Your Jab" href="https://ayushshawnfrost.github.io/GetYourJab_2022/" desc="" img="1" />
+
+
+
+
+          {/* <Project title="Get Your Jab" href="https://ayushshawnfrost.github.io/GetYourJab_2022/" desc="" img="1" />
           <div className="ml-3 mt-5 font-playfair">
             <p className="text-2xl font-playfair text-yellow pb-5">Get Your Jab</p>
             <li className="pb-2">Developed a client-side web application that gives information on Covid-19 vaccination centers and slots availability throughout India.</li>
@@ -105,7 +127,7 @@ const Projects = () => {
             <p className="text-2xl font-playfair text-yellow pb-5">Covid-19 Dashboard (India)</p>
             <li className="pb-2">Covid-19 dashboard for India. Shows the number of Active Cases, Confirmed Cases, Deceased, Migrated, Recovered cases state wise.</li>
             <li>The application consumes data from Public APIs.</li>
-          </div>
+          </div> */}
         </motion.div>
       </div>
     </section>
