@@ -5,6 +5,7 @@ import MySkills from "./scenes/MySkills";
 import LineGradient from "./components/LineGradient";
 import Projects from "./scenes/Projects";
 import Experience from "./scenes/Experience";
+import JobExperience from "./scenes/JobExperience";
 import Footer from "./scenes/Footer";
 import useMediaQuery from "./hooks/useMediaQuery";
 import { useEffect, useState } from "react";
@@ -97,7 +98,7 @@ function App() {
           amount="all"
           onViewportEnter={() => setSelectedPage("experience")}
         >
-          <Experience />
+          <JobExperience />
         </motion.div>
       </div>
       <Footer />
